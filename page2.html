@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Semangat Terus Yaa</title>
+
+<style>
+body {
+    margin: 0;
+    height: 100vh;
+    background: #e8bfc5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Title */
+h1 {
+    color: #ff2e63;
+    font-size: 34px;
+    margin-bottom: 25px;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+/* Heart container */
+.heart-container {
+    width: 260px;
+    animation: heartbeat 1.3s infinite;
+    margin-bottom: 25px;
+}
+
+/* Text */
+.message {
+    color: #444;
+    font-size: 18px;
+    margin-bottom: 8px;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+}
+
+.from {
+    color: #333;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeIn 4s forwards;
+}
+
+/* Heartbeat animation */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.15); }
+    40% { transform: scale(1); }
+    60% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>Semangat Terus Yaa Sayangg!</h1>
+
+<div class="heart-container">
+    <svg viewBox="0 0 512 512">
+        <path fill="url(#grad)" d="M471.7 73.3c-54.5-46.4-136-38.3-186.4 13.7L256 116.7l-29.3-29.7C176.3 35 94.8 26.9 40.3 73.3-18 124.1-13.7 215.6 43 272l193.5 199.8c10 10.3 26.2 10.3 36.2 0L469 272c56.7-56.4 61-147.9 2.7-198.7z"/>
+        <defs>
+            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#ff6f91"/>
+                <stop offset="100%" stop-color="#ff2e63"/>
+            </linearGradient>
+        </defs>
+    </svg>
+</div>
+
+<div class="message">
+    Aku percaya kok kamu pasti bisa! 💪
+   <p> Aku sentiasa disini semangatin kamu lurvee ❤️</p>
+</div>
+
+<div class="from">
+    from: Lusii ❤️
+</div>
+
+<!-- Background Music -->
+<audio autoplay loop>
+    <source src="music LOVE.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
